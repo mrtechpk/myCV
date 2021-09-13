@@ -1,0 +1,172 @@
+#back{
+    background: url(future3.jpg);
+    background-color: rgb(17, 114, 240);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 850px;
+    background-size: 100% 100%;
+    margin: 0;
+}
+#road {
+   
+    background: url(road.png);
+    
+ }
+
+#img{
+    width: 150px;
+    background: url(road.png);
+}
+#btn {
+    background-color: red;
+    margin-top:30%;
+    animation-name: example;
+    animation-duration: 4s ease;
+    width: 80px;
+    height: 90px;
+   font-size: 50px;
+    border-radius: 150%;
+    border: 0;
+}
+@keyframes example {
+    from {background-color: rgb(255, 0, 0);}
+    to {background-color: rgba(18, 43, 182, 0.767);}
+  }
+
+#btn :hover{
+    background-color: rgba(29, 76, 233, 0.233);
+    border-radius: 60%;
+    height: 90px;
+    width: 75px;
+    display: flex;
+
+}
+#pkbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #go{
+    text-decoration: none;
+    display: inline-block;
+    font-family:sans-serif;
+    animation-delay: 100s;
+  color:white;
+  text-decoration:none;
+  text-transform:uppercase;
+  letter-spacing:2.8px;
+  background-color: #1b8bf9;
+  padding:15px 20px;
+  border-radius:5rem;
+  box-shadow: 1px 2.9px 16px                 rgba(27,139,249,0.4);
+  transition:0.6s cubic-bezier(0.01, 1.69,    0.99, 0.94);
+ }
+ #go:hover {
+    box-shadow: 3px 4.9px 16px rgba(27, 31, 249, 0.315);
+   letter-spacing:5px;
+  }
+
+  #go::after{
+    transition:0.6s cubic-bezier(0.01, 1.69, 0.99, 0.94); 
+    padding:15px 2px;
+    width:50px;
+    color:transparent;
+z-index:-10;
+  }
+ #go:active {
+    color: blue;
+  }
+
+  /* new effect */
+
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@900&display=swap');
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: radial-gradient(rgba(#7600bf, 0.5) 0%, transparent 70%), linear-gradient(#0b161e 40%, #202076 70%);
+  perspective: 700px;
+  font-size: clamp(10px, 2vw, 20px);
+  background: url(future.jpg);
+  background-color:rgba(10, 10, 247, 0.774);
+  background-image: -o-linear-gradient();
+
+}
+
+
+
+h1 {
+  position: relative;
+  font-family: 'Exo';
+  font-size: 5em;
+  color: #6beb16;
+  margin: 0;
+  transform: skew(-15deg);
+  letter-spacing: 0.03em;
+  &::after {
+          content: '';
+    position: absolute;
+    top: -0.1em;
+    right: 0.05em;
+    width: 0.2em;
+    height: 0.2em;
+    background: 
+      radial-gradient(white 3%, rgba(white, 0.3) 15%, rgba(white, 0.05) 60%, transparent 80%),
+      radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 5% 100%,
+      radial-gradient(rgba(white, 0.2) 50%, transparent 60%) 50% 50% / 70% 5%;
+    background-repeat: no-repeat;
+  }
+  
+  span:first-child {
+    display: block;
+    text-shadow: 0 0 0.1em #8ba2d0, 0 0 0.2em black,  0 0 5em #165ff3;
+    -webkit-text-stroke: 0.06em rgba(black, 0.5);
+  }
+  
+  span:last-child {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(#032d50 25%, #00a1ef 35%, white 50%, #20125f 50%, #8313e7 55%, #ff61af 75%);
+    -webkit-text-stroke: 0.01em #94a0b9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+h2 {
+  font-family: 'Mr Dafoe';
+  margin: 0;
+  font-size:3.5em;
+  margin-top: -0.6em;
+  color: white;
+  text-shadow: 0 0 0.05em #fff, 0 0 0.2em #fe05e1, 0 0 0.3em #fe05e1;
+  transform: rotate(-7deg);
+}
+
+.grid {
+  $main: #7d41e6;
+  $glow: rgba(#2e26ff, 0.4);
+  background: 
+    linear-gradient(transparent 10%, $glow 15%, $main 15%, $glow 17%, transparent 20%),
+    linear-gradient(90deg, transparent 10%, $glow 15%, $main 15%, $glow 17%, transparent 20%);
+  background-size: 30px 30px;
+  width: 200vw;
+  height: 300vh;
+  position: absolute;
+  bottom: -120vh;
+  transform: rotateX(-100deg);
+  -webkit-mask-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0) 80%);
+}
